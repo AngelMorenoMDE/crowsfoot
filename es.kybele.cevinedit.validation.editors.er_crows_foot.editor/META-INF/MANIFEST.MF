@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: E/R Crows Foot GMF Diagramer - Editor Plug-In
+Bundle-SymbolicName: es.kybele.cevinedit.validation.editors.er_crows_foot.editor;singleton:=true
+Bundle-Version: 0.0.1.a
+Bundle-ClassPath: .
+Bundle-Activator: er_crows_foot.presentation.Er_crows_footEditorPlugin$Implementation
+Bundle-Vendor: Grupo de Investigación Kybele
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: er_crows_foot.presentation
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources;visibility:=reexport,
+ es.kybele.cevinedit.validation.editors.er_crows_foot.edit;visibility:=reexport,
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.emf.edit.ui;visibility:=reexport,
+ org.eclipse.ui.ide;visibility:=reexport
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,7 @@
+# Tracing options for the es.kybele.cevinedit.validation.editors.er_crows_foot.diagram plug-in
+
+# Common issues
+es.kybele.cevinedit.validation.editors.er_crows_foot.diagram/debug=false
+
+# Visual IDs
+es.kybele.cevinedit.validation.editors.er_crows_foot.diagram/debug/visualID=false

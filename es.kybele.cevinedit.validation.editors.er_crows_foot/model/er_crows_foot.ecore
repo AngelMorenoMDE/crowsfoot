@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="er_crows_foot" nsURI="http://www.kybele.es/gmf/er_crows_foot"
+    nsPrefix="er_crows_foot">
+  <eClassifiers xsi:type="ecore:EClass" name="ERCFDiagram">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entities" upperBound="-1"
+        eType="#//ERCFEntity" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relationships" upperBound="-1"
+        eType="#//ERCFRelationship" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ERCFEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//ERCFAttribute" containment="true" eOpposite="#//ERCFAttribute/inEntity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ERCFAttribute">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isPrimaryKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isForeingKey" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isUnique" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isNull" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMultiValued" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDerived" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="inEntity" eType="#//ERCFEntity"
+        eOpposite="#//ERCFEntity/attributes"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ERCFRelationship">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceCardinality" eType="#//ERCFRelationshipCardinalityTypes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetCardinality" eType="#//ERCFRelationshipCardinalityTypes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//ERCFEntity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//ERCFEntity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ERCFRelationshipCardinalityTypes">
+    <eLiterals name="ONE"/>
+    <eLiterals name="ONLY_ONE" value="1"/>
+    <eLiterals name="ZERO_OR_ONE" value="2"/>
+    <eLiterals name="ZERO_OR_MANY" value="3"/>
+    <eLiterals name="ONE_OR_MANY" value="4"/>
+    <eLiterals name="MANY" value="5"/>
+  </eClassifiers>
+</ecore:EPackage>

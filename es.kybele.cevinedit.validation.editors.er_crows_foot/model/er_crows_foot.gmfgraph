@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="er_crows_foot">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityZeroOneDecoration" lineWidth="2">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-4"/>
+      <template x="-4" y="-1"/>
+      <template x="-3" y="-2"/>
+      <template x="-2" y="-1"/>
+      <template x="-2"/>
+      <template x="-1"/>
+      <template x="-1" y="-2"/>
+      <template x="-1"/>
+      <template x="-1" y="2"/>
+      <template x="-1"/>
+      <template x="-2"/>
+      <template x="-2" y="1"/>
+      <template x="-3" y="2"/>
+      <template x="-4" y="1"/>
+      <template x="-4"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityZeroManyDecoration" lineWidth="2">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-4"/>
+      <template x="-4" y="-1"/>
+      <template x="-3" y="-2"/>
+      <template x="-2" y="-1"/>
+      <template x="-2"/>
+      <template y="-2"/>
+      <template x="-2"/>
+      <template y="2"/>
+      <template x="-2"/>
+      <template x="-2" y="1"/>
+      <template x="-3" y="2"/>
+      <template x="-4" y="1"/>
+      <template x="-4"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityOneDecoration" lineWidth="3">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <backgroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-2"/>
+      <template x="-2" y="-2"/>
+      <template x="-2"/>
+      <template x="-2" y="2"/>
+      <template x="-2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityOnlyOneDecoration" lineWidth="2">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-2"/>
+      <template x="-2" y="-2"/>
+      <template x="-2"/>
+      <template x="-2" y="2"/>
+      <template x="-2"/>
+      <template x="-3"/>
+      <template x="-3" y="-2"/>
+      <template x="-3"/>
+      <template x="-3" y="2"/>
+      <template x="-3"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityOneManyDecoration" lineWidth="2">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-2"/>
+      <template x="-2" y="-2"/>
+      <template x="-2"/>
+      <template x="-2" y="2"/>
+      <template x="-2"/>
+      <template y="-2"/>
+      <template x="-2"/>
+      <template y="2"/>
+      <template x="-2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ERCFCardinalityManyDecoration" lineWidth="2">
+      <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      <template x="-2"/>
+      <template y="-2"/>
+      <template x="-2"/>
+      <template y="2"/>
+      <template x="-2"/>
+    </figures>
+    <figures xsi:type="gmfgraph:CustomDecoration" name="ERCFCardinalityCircleDecoration" qualifiedClassName="er_crows_foot.diagram.edit.parts.CircleDecoration"/>
+    <figures xsi:type="gmfgraph:CustomDecoration" name="ERCFCardinalityRectangleDecoration" qualifiedClassName="er_crows_foot.diagram.edit.parts.RectangleDecoration"/>
+    <descriptors name="ERCFEntityFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ERCFEntityRoundedRectangleBaseLayout" lineWidth="2">
+        <layout xsi:type="gmfgraph:XYLayout"/>
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+        <children xsi:type="gmfgraph:Label" name="ERCFEntityNameFigure" text="Set Label...">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Arial" height="10" style="BOLD"/>
+          <insets top="10" left="10"/>
+        </children>
+        <children xsi:type="gmfgraph:Polyline" name="ERCFEntitySeparatorPolyline" lineWidth="2">
+          <layoutData xsi:type="gmfgraph:XYLayoutData">
+            <topLeft y="30"/>
+            <size dx="160" dy="4"/>
+          </layoutData>
+          <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+          <template y="2"/>
+          <template x="160" y="2"/>
+        </children>
+        <children xsi:type="gmfgraph:InvisibleRectangle" name="ERCFEntityAttributesInvisibleRectangleCompartment">
+          <layoutData xsi:type="gmfgraph:XYLayoutData">
+            <topLeft y="32"/>
+            <size dx="160" dy="216"/>
+          </layoutData>
+          <layout xsi:type="gmfgraph:StackLayout"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="ERCFAttributeFigure">
+      <actualFigure xsi:type="gmfgraph:InvisibleRectangle" name="ERCFAttributeInvisibleRectangleBaseLayout">
+        <layout xsi:type="gmfgraph:FlowLayout" vertical="true"/>
+        <minimumSize dx="150" dy="20"/>
+        <preferredSize dx="150" dy="20"/>
+        <children xsi:type="gmfgraph:Label" name="ERCFAttributeLabel" text="Set Label...">
+          <font xsi:type="gmfgraph:BasicFont" faceName="Arial" style="BOLD"/>
+          <insets top="5" left="5"/>
+        </children>
+      </actualFigure>
+      <accessors figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ERCFRelationshipFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ERCFRelationshipFigure" lineWidth="2" sourceDecoration="//@figures.0/@figures.4" targetDecoration="//@figures.0/@figures.5">
+        <foregroundColor xsi:type="gmfgraph:ConstantColor" value="black"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ERCFRelationshipNameExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ERCFRelationshipNameExternalLabel" text="Set Label...">
+        <font xsi:type="gmfgraph:BasicFont" faceName="Arial" height="10" style="BOLD"/>
+      </actualFigure>
+    </descriptors>
+  </figures>
+  <nodes name="ERCFEntity" figure="ERCFEntityFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="160" dy="250"/>
+    </facets>
+  </nodes>
+  <nodes name="ERCFAttribute" figure="ERCFAttributeFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="150" dy="20"/>
+    </facets>
+  </nodes>
+  <connections name="ERCFRelationship" figure="ERCFRelationshipFigure"/>
+  <compartments name="ERCFEntityAttributesCompartment" figure="ERCFEntityFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="ERCFEntityName" figure="ERCFEntityFigure" elementIcon="false" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ERCFAttributeName" figure="ERCFAttributeFigure" elementIcon="false" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="ERCFRelationshipNameExternalLabel" figure="ERCFRelationshipNameExternalLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="-10"/>
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="CENTER"/>
+  </labels>
+</gmfgraph:Canvas>

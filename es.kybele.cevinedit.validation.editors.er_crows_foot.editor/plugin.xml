@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated er_crows_foot -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="er_crows_foot.presentation.Er_crows_footModelWizardID"
+            name="%_UI_Er_crows_footModelWizard_label"
+            class="er_crows_foot.presentation.Er_crows_footModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Er_crows_footModelFile.gif">
+         <description>%_UI_Er_crows_footModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated er_crows_foot -->
+      <editor
+            id="er_crows_foot.presentation.Er_crows_footEditorID"
+            name="%_UI_Er_crows_footEditor_label"
+            icon="icons/full/obj16/Er_crows_footModelFile.gif"
+            extensions="er_crows_foot"
+            class="er_crows_foot.presentation.Er_crows_footEditor"
+            contributorClass="er_crows_foot.presentation.Er_crows_footActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
